@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+				<link rel="stylesheet" href="webroot/css/lib/grid.css">
+		<link rel="stylesheet" href="webroot/css/main.css">
+
+	</head>
+
+	<body class="waiting">
+
+		<!-- <h1 style="position:absolute; top:20px; left:0; width: 100%">Workout Manager</h1> -->
+
+		<main>
+
+			<div id="flip" class="flip">
+				
+				<section id="menu">
+					<nav>
+						<a id="download" class="download-data" href="#"><span class="icon-download pointer"></span></a>
+						<a href="#" id="upload"><span class="icon-upload pointer"></span></a>
+						<form class="away">
+							<input type="file" id="upload_input">
+						</form>
+						<span id="reset_data" class="icon-repeat pointer"></span>
+					</nav>
+					<div class="wrapper">
+					<!-- <div class="verticalMiddle"> -->
+						<div class="mb-grid mb-grid-mm-6a mb-grid-tm-12a"></div>
+					</div>
+					<!-- </div> -->
+				</section>
+
+				<section id="exercise">
+					<button id="toggle" class="toggle overlay-visible">Commencer</button>
+
+					<span id="player_action_next" class="show-in-work-top icon-play3 pointer sm-opacity-w-h"></span>
+					<span id="player_action_next_exercise" class="show-in-work-top icon-forward3 pointer sm-opacity-w-h"></span>
+
+					<span id="backMenu" class="f-left pointer icon-circle-left overlay-visible sm-opacity sm-opacity-h"></span>
+					<!-- <div class="verticalMiddle"> -->
+					<section>
+
+						<h2 id="exerciseTitle" class="editable-input" data-name="name" data-type="pack">
+						</h2>
+
+						<span id="add_exercise" class="icon-plus abs-tr pointer sm-opacity-h hide-in-work"></span>
+
+						<span id="delete_pack" class="icon-cancel-circle abs-tr pointer sm-opacity-h hide-in-work"></span>
+
+						<!-- <button id="save_data">Save</button> -->
+						<div id="exercisesList" class="exercisesList">
+							<div class="wrapper"></div>
+							<!-- <button id="add_exercise">Ajouter</button> -->
+						</div>
+						<span id="timer" class="time show-in-work-top">0</span>
+						<p id="text" class="text show-in-work-top"></p>
+						<div id="series" class="series show-in-work"></div>
+						<span id="exercisesCount" class="abs-tr show-in-work-top overlay-visible sm-opacity-w">1/2</span>
+					</section>
+					<!-- </div> -->
+					<span id="play_list_toggle_show" class="icon-circle-down overlay-visible show-in-work-top sm-opacity-w-h"></span>
+					<div id="audio_control" class="overlay-visible show-in-work">
+						<span id="play_list_name" class="sm-opacity-w">chanson en cours</span>
+						<span id="play_list_prev" class="icon-backward pointer sm-opacity-w-h"></span>
+						<span id="play_list_toggle" class="icon-pause pointer sm-opacity-w-h"></span>
+						<span id="play_list_next" class="icon-forward pointer sm-opacity-w-h"></span>
+						<span id="play_list_mute" class="icon-volume pointer sm-opacity-w-h"></span>
+					</div>
+				</section>
+
+			</div>
+
+
+
+
+
+		</main>
+
+		<div id="overlay" class="overlay"></div>
+
+		<div id="modal" class="full-fixed modal" data-type="confirm">
+			<div class="abs-wrapper modal-wrapper pointer">
+				<section class="modal-container abs-full-c">
+					<span class="icon-cancel-circle abs-tr pointer sm-opacity-h" data-action="close"></span>
+					<h3 class="modal-title">Title</h3>
+					<p class="modal-content">Content</p>
+					<footer>
+						<button class="modal-button-yes">Oui</button>
+						<button class="modal-button-no">Non</button>
+					</footer>
+				</section>
+			</div>
+		</div>
+
+<!-- 		<div id="modal" class="full-fixed modal" data-type="info">
+			<div class="abs-wrapper modal-wrapper pointer">
+				<section class="modal-container abs-full-c">
+					<span class="icon-cancel-circle abs-tr pointer sm-opacity-h" data-action="close"></span>
+					<h3 class="modal-title">Title</h3>
+					<p class="modal-content">Content</p>
+					<footer>
+						<button class="modal-button-yes">Yes</button>
+						<button class="modal-button-no">No</button>
+					</footer>
+				</section>
+			</div>
+		</div> -->
+
+		<audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+	        <source type="audio/mp3">
+	    </audio>
+
+		<script src="webroot/js/lib/jquery-latest-min.js"></script>
+		<script src="webroot/js/main.js"></script>
+
+	</body>
+</html>
